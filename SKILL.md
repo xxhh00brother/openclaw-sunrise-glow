@@ -1,6 +1,6 @@
 ---
 name: sunrise-glow
-description: 早霞晚霞预测系统。基于 Open-Meteo + Sunrise-Sunset API，使用多 Agent 协调自动预测拍摄条件。
+description: 早霞晚霞预测系统。基于 Open-Meteo + Sunrise-Sunset API，预测朝霞/晚霞拍摄条件。
 version: 1.0.0
 author: bobo
 ---
@@ -9,11 +9,7 @@ author: bobo
 
 ## 概述
 
-专业的朝霞/晚霞拍摄条件预测工具，基于多 Agent 自动协作：
-
-- **Athena** 🦉 - 项目协调者
-- **Titan** 🏛️ - 后端开发（API 集成、预测算法）
-- **Luna** 🌙 - 前端展示（人类可读输出）
+专业的朝霞/晚霞拍摄条件预测工具，帮助摄影师捕捉最佳光线时刻。
 
 ## 预测算法
 
@@ -45,18 +41,9 @@ author: bobo
 
 ## 快速开始
 
-### 一键启动
-
 ```bash
 cd /home/admin/.openclaw/workspace/skills/sunrise-glow
 ./start-sunrise-glow.sh
-```
-
-### 查看项目状态
-
-```bash
-cd /home/admin/.openclaw/workspace/skills/multi-agent/scripts
-./ma status 7521215b
 ```
 
 ## 文件结构
@@ -80,7 +67,6 @@ sunrise-glow/
 ## 依赖
 
 - Python 3.x
-- OpenClaw multi-agent 框架
 - 网络连接（调用 API）
 
 ## 许可证

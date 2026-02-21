@@ -55,7 +55,6 @@
 ### 前置要求
 
 - Python 3.6+
-- OpenClaw 运行环境
 - 网络连接（调用天气 API）
 
 ### 安装与启动
@@ -65,7 +64,7 @@
 git clone https://github.com/xxhh00brother/openclaw-sunrise-glow.git
 cd openclaw-sunrise-glow
 
-# 一键启动（需要 OpenClaw 环境）
+# 一键启动
 ./start-sunrise-glow.sh
 ```
 
@@ -96,18 +95,6 @@ sunrise-glow/
 ├── data/                  # 历史预测数据
 └── tests/                 # 测试用例
 ```
-
----
-
-## 🤖 多 Agent 架构
-
-本系统使用 OpenClaw 多 Agent 框架自动协作：
-
-| Agent | 角色 | 职责 |
-|-------|------|------|
-| **Athena** 🦉 | 协调者 | 监督进度、汇报用户、处理问题 |
-| **Titan** 🏛️ | 后端开发 | API 集成、预测算法、数据处理 |
-| **Luna** 🌙 | 前端展示 | 人类可读输出、多地点对比 |
 
 ---
 
@@ -155,7 +142,6 @@ print(result)
 ### v1.0.0 (2026-02-21)
 - ✅ 初始版本发布
 - ✅ 基础预测算法
-- ✅ 多 Agent 自动协作
 - ✅ OpenClaw Skill 集成
 
 ---
@@ -182,7 +168,6 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 - [Open-Meteo](https://open-meteo.com/) - 免费天气 API
 - [Sunrise-Sunset.org](https://sunrise-sunset.org/) - 日出日落时间 API
-- [OpenClaw](https://github.com/openclaw/openclaw) - AI Agent 框架
 
 ---
 
